@@ -4,25 +4,22 @@
         <meta charset="utf-8">
         <title> Meu portfólio Web</title>
         <style>
-            .fonte {
+            .titulo {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                position: relative;
-                top: 10px;
-                float: right;
-                margin-right: 20px;
-                margin-bottom: 20px;
-            }
-            .cor {
                 color:#604d53;
             }
+           
             body {
                 background-color: #eee2df;
             }
 
-            .cor-fonte {
+            .perfil {
                 color: #604d53;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 20px;
+                font-size: 18px;
+                margin-left: 20px;
+                line-height: 1.5em;
+                text-align: justify;
             }
             .qualidades {
                 
@@ -30,60 +27,88 @@
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 20px;
                 color: #f5f1ed;
-                font-weight: bold;
+                line-height: 1.5em;
+                
             }
             .lista-qualid {
-                font-size: 20px;
+                font-size: 18px;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 color: #6b4d57;
+                margin-bottom: 100px;
+                                              
+            } 
+            
+            .tam {
+                font-size: 20px;
             }
-            .tamanho {
-            font-size: 18px;
+
+
+            .link {
+                font-size: 15px;
             }
-            .borda{
-                border-radius: 50%;
+            .foto {
+                border-radius: 10%;
                 border: 6px solid #4d243d;
                 padding: 4px;
+                position: absolute;
+                top: 20px;
+                right: 20%;
+             
+            
             }
+
+            body {
+                position: relative;
+            }
+
         </style>
 
     </head>
 
     <body>
         <div>
-        <h1 class="fonte cor"> Prisciane de S. Beltrão Pegurski </h1></div>
-        <img src ="Prisciane.jpg" class="borda" width="200px" title="Prisciane Beltrão" alt="Prisciane Beltrão" id="Pri">
-              
-        <p id="Descrição perfil" class="cor-fonte"> Sou <em> brasileira </em>, nascida em <strong> Abreu e Lima - PE </strong>.<br>
+        <h1 class="titulo"> Prisciane de S. Beltrão Pegurski </h1></div>
+     
+        <div id="pri">
+            <img src ="Prisciane.jpg" class="foto" width="200px" title="Prisciane Beltrão" alt="Prisciane Beltrão" id="Pri">
+            </p>
+            </div>
+          
+        <div id="descrição-perfil">
+        <p class="perfil"> Sou <em> brasileira </em>, nascida em <strong> Abreu e Lima - PE </strong>.<br>
             Vivo atualmente em Curitiba - PR, juntamente com minha família. <br>
             Tenho dois filhos lindos, um esposo maravilhoso e um cachorro manhoso. <br>
             <strong> Amo-os incondicionalmente </strong>!<br>
             Adoro <em> sol, areia </em> e <em> mar </em>! 
-        </p>
+        </p> 
 
+        </div>
+       
          
         <p class="qualidades"> Algumas qualidades que possuo:
 
         </p>
         <ul class="lista-qualid">
             <li> <strong>Dedicação nos estudos; </strong> </li>
-            <li> Vontade de aprender; </li>
+            <li class="tam"> Vontade de aprender; </li>
             <li> Facilidade no aprendizado; </li>
             <li> Boa comunicação; </li>
             <li> <strong> Honestidade; </strong> </li>
-            <li>Trabalho em equipe. </li> 
+            <li class="tam">Trabalho em equipe. </li> 
 
         </ul>
-        <a href="#Pri" class="tamanho"> Foto do meu perfil</a> <br>
+
+      
+        <a href="#pri" class="link"> Foto do meu perfil</a> <br>
         <p>
 
         </p>
 
-        <a href="https://bompracachorro.blogfolha.uol.com.br/" target="_blank" class="tamanho"> Indico este blog sobre cachorros 
+        <a href="https://bompracachorro.blogfolha.uol.com.br/" target="_blank" class="link"> Indico este blog sobre cachorros 
         </a>
         <p>
 
         </p>
-        <a href="#Descrição perfil" class="tamanho"> Clique aqui para saber mais sobre mim </a>
+        <a href="#descrição-perfil" class="link"> Clique aqui para saber mais sobre mim </a>
     </body>
 </html>
